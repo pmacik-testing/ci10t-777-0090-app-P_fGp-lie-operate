@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-vdpb
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-777-0090-tenant/ci10t-777-0090-app/devfile-sample-vdpb@sha256:39153965d4a08eca08bf84ef76efc07ac40dd5ee56868ec12f2e673b0142fba1
+        name: my-nodejs
+        resources: {}
+status: {}
